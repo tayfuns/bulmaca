@@ -1,0 +1,214 @@
+.bulmaca {
+  --vurgu: #2563eb;
+  --vurgu-acik: #dbeafe;
+  --kenar: #94a3b8;
+  --yanlis: #dc2626;
+  --yanlis-zemin: #fee2e2;
+  --dogru: #15803d;
+  --dogru-zemin: #dcfce7;
+}
+
+.bulmaca h2 {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+}
+
+.bulmaca-govde {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.bulmaca-tahta {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.bulmaca-izgara {
+  /* Dar ekranda kutular küçülür; +2 numara etiketleri için bırakılan paydır */
+  --hucre: clamp(22px, calc((100vw - 32px) / (var(--sutun) + 2)), 40px);
+  display: grid;
+  gap: 0;
+  /* Numaralar kelimenin solunda / üstünde durduğu için boşluk bırak */
+  padding: var(--hucre) 0 0 var(--hucre);
+  width: max-content;
+}
+
+.hucre {
+  position: relative;
+  width: var(--hucre);
+  height: var(--hucre);
+  /* Komşu kutuların kenarları üst üste binsin */
+  margin: 0 -1px -1px 0;
+  box-sizing: content-box;
+  border: 1px solid var(--kenar);
+  background: #fff;
+}
+
+.hucre input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+  font: 600 calc(var(--hucre) * 0.5) / 1 inherit;
+  font-family: inherit;
+  color: #0f172a;
+  caret-color: transparent;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.hucre input::selection {
+  background: transparent;
+}
+
+.hucre.kelimede {
+  background: var(--vurgu-acik);
+}
+
+.hucre.dogru {
+  background: var(--dogru-zemin);
+}
+
+.hucre.dogru input {
+  color: var(--dogru);
+}
+
+.hucre.yanlis {
+  background: var(--yanlis-zemin);
+  border-color: var(--yanlis);
+  z-index: 1;
+}
+
+.hucre.yanlis input {
+  color: var(--yanlis);
+}
+
+.hucre.aktif {
+  z-index: 2;
+  box-shadow: inset 0 0 0 2px var(--vurgu);
+}
+
+.etiket {
+  position: absolute;
+  font-size: calc(var(--hucre) * 0.36);
+  line-height: 1;
+  color: #334155;
+  pointer-events: none;
+}
+
+.etiket.yatay {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 5px;
+}
+
+.etiket.dikey {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 4px;
+}
+
+.ozel-harfler,
+.eylemler {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  padding-left: var(--bosluk, 0);
+}
+
+.bulmaca button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.ozel-harfler button,
+.eylemler button {
+  padding: 8px 14px;
+  border: 1px solid var(--kenar);
+  border-radius: 6px;
+  background: #fff;
+  color: #0f172a;
+}
+
+.ozel-harfler button {
+  min-width: 40px;
+  font-weight: 600;
+}
+
+.ozel-harfler button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.eylemler .birincil {
+  border-color: var(--vurgu);
+  background: var(--vurgu);
+  color: #fff;
+  font-weight: 600;
+}
+
+.ozet {
+  min-height: 1.5em;
+  margin: 14px 0 0;
+  color: var(--yanlis);
+  font-weight: 500;
+}
+
+.ozet.basarili {
+  color: var(--dogru);
+}
+
+.sorular {
+  flex: 1 1 260px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorular button {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.sorular button:hover {
+  background: #f1f5f9;
+}
+
+.sorular li.aktif button {
+  background: var(--vurgu-acik);
+}
+
+.soru-no {
+  min-width: 1.5em;
+  font-weight: 700;
+  text-align: right;
+}
+
+.soru-yon {
+  color: #64748b;
+}
+
+.soru-metin {
+  flex: 1;
+}
+
+.soru-uzunluk {
+  color: #64748b;
+  font-size: 0.85em;
+  white-space: nowrap;
+}

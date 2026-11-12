@@ -1,0 +1,84 @@
+{
+  "bulmacalar": [
+    {
+      "id": 1,
+      "baslik": "Günlük Kelimeler",
+      "sorular": [
+        { "id": 101, "soru": "Okul", "cevap": "Schule" },
+        { "id": 102, "soru": "Pencere", "cevap": "Fenster" },
+        { "id": 103, "soru": "Kahvaltı", "cevap": "Frühstück" },
+        { "id": 104, "soru": "Cadde, sokak", "cevap": "Straße" },
+        { "id": 105, "soru": "Elma", "cevap": "Apfel" },
+        { "id": 106, "soru": "Kız çocuğu", "cevap": "Mädchen" },
+        { "id": 107, "soru": "Su", "cevap": "Wasser" },
+        { "id": 108, "soru": "Çiçek", "cevap": "Blume" },
+        { "id": 109, "soru": "Masa", "cevap": "Tisch" },
+        { "id": 110, "soru": "Kedi", "cevap": "Katze" }
+      ]
+    },
+    {
+      "id": 2,
+      "baslik": "Hayvanlar",
+      "sorular": [
+        { "id": 201, "soru": "Köpek", "cevap": "Hund" },
+        { "id": 202, "soru": "At", "cevap": "Pferd" },
+        { "id": 203, "soru": "Kuş", "cevap": "Vogel" },
+        { "id": 204, "soru": "Kelebek", "cevap": "Schmetterling" },
+        { "id": 205, "soru": "Fil", "cevap": "Elefant" },
+        { "id": 206, "soru": "Aslan", "cevap": "Löwe" },
+        { "id": 207, "soru": "Ayı", "cevap": "Bär" },
+        { "id": 208, "soru": "Balık", "cevap": "Fisch" },
+        { "id": 209, "soru": "Fare", "cevap": "Maus" },
+        { "id": 210, "soru": "Domuz", "cevap": "Schwein" }
+      ]
+    },
+    {
+      "id": 3,
+      "baslik": "Yiyecek ve İçecek",
+      "sorular": [
+        { "id": 301, "soru": "Ekmek", "cevap": "Brot" },
+        { "id": 302, "soru": "Peynir", "cevap": "Käse" },
+        { "id": 303, "soru": "Süt", "cevap": "Milch" },
+        { "id": 304, "soru": "Patates", "cevap": "Kartoffel" },
+        { "id": 305, "soru": "Sebze", "cevap": "Gemüse" },
+        { "id": 306, "soru": "Şeker", "cevap": "Zucker" },
+        { "id": 307, "soru": "Tereyağı", "cevap": "Butter" },
+        { "id": 308, "soru": "Et", "cevap": "Fleisch" },
+        { "id": 309, "soru": "Çorba", "cevap": "Suppe" },
+        { "id": 310, "soru": "Pasta, kek", "cevap": "Kuchen" }
+      ]
+    },
+    {
+      "id": 4,
+      "baslik": "Aile",
+      "sorular": [
+        { "id": 401, "soru": "Anne", "cevap": "Mutter" },
+        { "id": 402, "soru": "Baba", "cevap": "Vater" },
+        { "id": 403, "soru": "Erkek kardeş", "cevap": "Bruder" },
+        { "id": 404, "soru": "Kız kardeş", "cevap": "Schwester" },
+        { "id": 405, "soru": "Büyükanne", "cevap": "Großmutter" },
+        { "id": 406, "soru": "Amca, dayı", "cevap": "Onkel" },
+        { "id": 407, "soru": "Teyze, hala", "cevap": "Tante" },
+        { "id": 408, "soru": "Oğul", "cevap": "Sohn" },
+        { "id": 409, "soru": "Kız evlat", "cevap": "Tochter" },
+        { "id": 410, "soru": "Anne baba, ebeveyn", "cevap": "Eltern" }
+      ]
+    },
+    {
+      "id": 5,
+      "baslik": "Ev",
+      "sorular": [
+        { "id": 501, "soru": "Mutfak", "cevap": "Küche" },
+        { "id": 502, "soru": "Oda", "cevap": "Zimmer" },
+        { "id": 503, "soru": "Kapı", "cevap": "Tür" },
+        { "id": 504, "soru": "Sandalye", "cevap": "Stuhl" },
+        { "id": 505, "soru": "Yatak", "cevap": "Bett" },
+        { "id": 506, "soru": "Lamba", "cevap": "Lampe" },
+        { "id": 507, "soru": "Dolap", "cevap": "Schrank" },
+        { "id": 508, "soru": "Halı", "cevap": "Teppich" },
+        { "id": 509, "soru": "Ayna", "cevap": "Spiegel" },
+        { "id": 510, "soru": "Bahçe", "cevap": "Garten" }
+      ]
+    }
+  ]
+}
