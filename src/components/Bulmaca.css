@@ -95,24 +95,37 @@
 
 .etiket {
   position: absolute;
-  font-size: calc(var(--hucre) * 0.36);
+  display: flex;
+  align-items: center;
+  font-size: calc(var(--hucre) * 0.34);
   line-height: 1;
   color: #334155;
+  white-space: nowrap;
   pointer-events: none;
 }
 
+.etiket-ok {
+  color: var(--vurgu);
+  font-weight: 700;
+}
+
+/* Yatay kelime: ok ve numara kutunun solunda yan yana */
 .etiket.yatay {
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  padding-right: 5px;
+  gap: 2px;
+  padding-right: 4px;
 }
 
+/* Dikey kelime: ok numaranın altında, kutuyu gösterir */
 .etiket.dikey {
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  padding-bottom: 4px;
+  flex-direction: column-reverse;
+  gap: 1px;
+  padding-bottom: 2px;
 }
 
 .ozel-harfler,
@@ -210,5 +223,14 @@
 .soru-uzunluk {
   color: #64748b;
   font-size: 0.85em;
+  white-space: nowrap;
+}
+
+/* Dar ekranda buton yazıları ikiye bölünmesin, sığmayan alt satıra geçsin */
+.eylemler {
+  flex-wrap: wrap;
+}
+
+.eylemler button {
   white-space: nowrap;
 }

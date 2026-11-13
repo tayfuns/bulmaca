@@ -205,6 +205,9 @@ export default function Bulmaca({ veri }: { veri: BulmacaVerisi }) {
                 >
                   {hucre.etiketler.map((e) => (
                     <span key={e.yon} className={`etiket ${e.yon}`}>
+                      <span className="etiket-ok" aria-hidden="true">
+                        {e.yon === 'yatay' ? '→' : '↓'}
+                      </span>
                       {e.no}
                     </span>
                   ))}
